@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-image">
+            <img id="hero-image"src="https://images.unsplash.com/photo-1676493779152-08174a4101e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="vase on top of a desk">
+            <span class="caption">Photo by <a href="https://unsplash.com/@bradleycdunn">Bradley Dunn</a> on <a href="https://unsplash.com/">Unsplash</a></figcaption>
+        </div>
+        <form id="card-form" action="" method="post">
+            <h2>This is not a real online service! Sign up now to get started.</h2>
+            <h2>You <span class="italicize">know</span> you want to.</h2>
+            <div id="form-controls">
+                <h2>Let's do this!</h2>
+                <div class="flex-group">
+                    <div class="control-div">
+                        <label for="firstName">FIRST NAME</label>
+                        <input id="firstName" type="text" placeholder="Bob">
+                    </div>
+                    <div class="control-div">
+                        <label for="lastName">LAST NAME</label>
+                        <input id="lastName" type="text" placeholder="Ross">
+                    </div>
+                </div>
+                <div class="flex-group">
+                    <div class="control-div">
+                        <label for="email">EMAIL</label>
+                        <input id="email" type="email" placeholder="artiskewl@gmail.com" required>
+                    </div>
+                    <div class="control-div">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input id="phone" type="tel" placeholder="XXX-XXX-XXXX" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" title="hint: XXX-XXX-XXXX">
+                    </div>
+                </div>
+                <div class="flex-group">
+                    <div class="control-div">
+                        <label for="password">PASSWORD</label>
+                        <input id="password" type="text" minlength="6" required>
+                    </div>
+                    <div class="control-div">
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input id="confirmPassword" type="password" required>
+                    </div>
+                </div>
+            </div>
+            <button class="submit">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </form>
+    </div>
+</body>
+</html>
